@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "Montserra";
+    src: url(./Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 15px 30px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: none;
+    border: solid 1px rgb(194, 194, 194);
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+p {
+    padding: 20px 0;
+    font-weight: 300;
+    line-height: 40px;
+    font-size: 1.2rem;
+}
+
+body {
+    margin: 0 auto;
+    align-items: center;
+}
+
+.main-header-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.left-part {
+    padding: 100px 40px 100px 40px;
+}
+
+.left-part h1 {
+    font-weight: 200;
+    font-size: 3.5rem;
+    padding: 20px 0;
+}
+
+.right-part {
+    background: url(./img/banner.jpg) center/cover;
+    background-position: bottom right;
+}
+
+.second-part {
+    display: grid;
+    grid-template-columns: 33% 67%;
+}
+
+.img-left img {
+    width: 100%;
+    min-height: 400px;
+}
+
+.txt-right {
+    padding: 40px;
+    border: 1px solid rgb(245, 245, 245);
+}
+
+.third-part {
+    display: grid;
+    grid-template-columns: 67% 33%;
+}
+
+.txt-left {
+    padding: 40px;
+    border: 1px solid rgb(245, 245, 245);
+}
+
+.img-right img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.title-form {
+    margin: 45px auto;
+}
+
+.title-form h2 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    max-height: 500px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 224px;
+    grid-template-areas: 
+    "input1 input2"
+    "txtarea txtarea";
+    gap: 10px;
+}
+
+.txtarea {
+    grid-area: txtarea;
+}
+
+
+.button-form {
+    text-align: center;
+}
+
+.button-form button {
+    margin: 30px;   
+    position: relative;
+}
+
+.button-form::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background: rgb(179, 179, 179);
+    bottom: -10px;
+    left: 15%;
+}
+
+.logos {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+i {
+    height: 40px;
+}
