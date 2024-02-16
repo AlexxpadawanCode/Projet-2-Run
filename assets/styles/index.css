@@ -1,0 +1,165 @@
+@font-face {
+  font-family: montserrat;
+  src: url(/assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: sourcesans3;
+  src: url(/assets/fonts/SourceSans3-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  text-align: center;
+  margin: 0 auto;
+  font-family: "montserrat";
+}
+
+.btn {
+  background: none;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 50px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn:hover {
+  color: skyblue;
+  border: 1px solid skyblue;
+}
+
+p {
+  text-align: left;
+  margin: 25px 0;
+  line-height: 35px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-family: "sourcesans3";
+}
+
+h2 {
+  font-family: "sourcesans3";
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+header {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+header .left-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .left-header .head-content {
+  margin: auto 60px;
+  text-align: left;
+}
+header .left-header .head-content h1 {
+  font-family: "sourcesans3";
+  font-size: 2.5rem;
+  font-weight: 100;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+}
+header .right-header {
+  background: url(/assets/img/banner.jpg) right/cover;
+}
+
+main .section1 {
+  display: grid;
+  grid-template-columns: 37% 63%;
+  min-height: 400px;
+}
+main .section1 .left-img {
+  background: url(/assets/img/img-left.jpg) center/cover;
+}
+main .section1 .right-part {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+}
+main .section2 {
+  display: grid;
+  grid-template-columns: 63% 37%;
+  min-height: 400px;
+}
+main .section2 .left-part {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+}
+main .section2 .right-img {
+  background: url(/assets/img/img-right.jpg) center/cover;
+}
+main .section3 {
+  margin: 40px auto;
+  text-align: center;
+  max-width: 1100px;
+}
+main .section3 .grid {
+  margin: 40px auto;
+  max-width: 600px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 230px;
+  grid-template-areas: "input1 input2" "txtarea txtarea";
+}
+main .section3 .grid label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+main .section3 .grid input {
+  width: 100%;
+}
+main .section3 .textarea {
+  grid-area: txtarea;
+}/*# sourceMappingURL=index.css.map */

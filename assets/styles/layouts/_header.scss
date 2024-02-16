@@ -1,0 +1,27 @@
+header {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .left-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .head-content {
+            margin: auto 60px;
+            text-align: left;
+
+            h1 {
+                @include title;
+                font-size: 3.5rem;
+                letter-spacing: 2px;
+            }
+
+        }
+    }
+
+    .right-header {
+        background: url(/assets/img/banner.jpg) right/cover;
+    }
+}

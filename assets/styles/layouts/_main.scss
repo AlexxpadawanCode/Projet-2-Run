@@ -1,0 +1,70 @@
+main {
+    .section1 {
+        display: grid;
+        grid-template-columns: 37% 63%;
+        min-height: 400px;
+
+        .left-img {
+            background: url(/assets/img/img-left.jpg) center/cover;
+        }
+
+        .right-part {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+    }
+
+    .section2 {
+        display: grid;
+        grid-template-columns: 63% 37%;
+        min-height: 400px;
+
+        .left-part {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .right-img {
+            background: url(/assets/img/img-right.jpg) center/cover;
+        }
+    }
+
+    .section3 {
+        margin: 40px auto;
+        text-align: center;
+        max-width: 1100px;
+
+        .grid {
+            margin: 40px auto;
+            max-width: 600px;
+            gap: 10px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 100px 230px;
+            grid-template-areas: 
+            "input1 input2"
+            "txtarea txtarea";
+
+            label {
+                font-size: 0.9rem;
+                font-weight: 500;
+                letter-spacing: 1px;
+                margin-bottom: 30px;
+            }
+
+            input {
+                width: 100%;
+            }
+        }
+
+        .textarea {
+            grid-area: txtarea;
+         }
+    }
+}
