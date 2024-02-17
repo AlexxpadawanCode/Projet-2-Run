@@ -1,0 +1,42 @@
+footer {
+    padding: 70px 0 90px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: $color1;
+        height: 1px;
+        width: 90%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 300px;
+        margin: 0 auto;
+
+        a {
+            font-size: 1.2rem;
+            border: 1px solid $color1;
+            border-radius: 50px;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+
+            &:hover {
+                color: $color2;
+                border: 1px solid $color2;
+            }
+            
+        }
+    }
+}

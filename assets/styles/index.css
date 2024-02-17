@@ -11,6 +11,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none;
 }
 
 html {
@@ -152,14 +153,78 @@ main .section3 .grid {
   grid-template-areas: "input1 input2" "txtarea txtarea";
 }
 main .section3 .grid label {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 1px;
   margin-bottom: 30px;
 }
-main .section3 .grid input {
+main .section3 .grid input[type=text], main .section3 .grid textarea {
   width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(204, 204, 204);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+main .section3 .grid input[type=text]:focus, main .section3 .grid textarea:focus {
+  border: solid skyblue;
+}
+main .section3 .grid textarea {
+  resize: none;
+  height: 100px;
 }
 main .section3 .textarea {
   grid-area: txtarea;
+}
+
+footer {
+  padding: 70px 0 90px;
+  position: relative;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  background: rgb(204, 204, 204);
+  height: 1px;
+  width: 90%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+footer ul a {
+  font-size: 1.2rem;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer ul a:hover {
+  color: skyblue;
+  border: 1px solid skyblue;
 }/*# sourceMappingURL=index.css.map */
